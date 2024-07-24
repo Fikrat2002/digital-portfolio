@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <img src="./img.info/logo.svg" alt="logo" class="logo">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#headline">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificate">Certificate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" id="conatac-design">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="home">
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      <dotlottie-player src="https://lottie.host/ed27f911-aa49-48de-9249-a8762282d1a1/I60WxdJJJx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <img src="project.imgs/Group 38.png" alt="portiflio" class="portiflio">        
+     
+    <section id="headline" >
+      <div class="container">
+        <span>Hello!</span>
+        <p class="jumbotron-heading">
+          I'm <span class="design">Khatira Fikrat</span>
+        </p>
+        <p class="lead text-muted">Front-End Developer</p>
+        <p class="lead text-muted">
+          Passionate about engaging user experiences. Let’s <br />collaborate to
+          bring your vision to life!
+        </p>
+        <div class="get-in-touch-wrapper">
+          <div class="get-in-touch"><a href="#contact" class="getlink">Get in touch</a></div>
+        </div>
+      </div>   
+    </section>
+    <hr/>
+     About Me Section 
+    <section id="about" class="container my-5">
+      <h2>About Me</h2>
+      <p>Who am I?</p>
+      <p>I am <span id="name">Khatira Fikrat</span>, A junior developer and student at the American University of Afghanistan, having joined the institution in 2022. I am deeply passionate about coding, finding particular joy in the art of styling, which allows me to unleash my creativity. Dreaming of becoming a software engineer, I see it not only as a professional goal but also as a pathway to personal independence. With each passing day, I eagerly immerses myself in the world of programming, constantly seeking new resources and opportunities to expand my skills and knowledge. Every project I undertakes is not just a task but a stepping stone towards the ultimate aspiration. I am committed to making meaningful contributions, and leaving a lasting impact in the ever-evolving landscape of technology.</p>
+        <div class="me">
+          <img src="" alt="">
+          <h6>Khatira Fikrat</h6>
+          <br>
+          <p>Front-End Developer</p>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center my-4">
+                    <h1 class="section-title">Skills</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 mb-4 text-center">
+                    <h2 class="section-subtitle" id="tools">Tools</h2>
+                    <div class="tree" id="tree1">
+                        <ul>
+                            <li>
+                                <span class="node">VScode</span>
+                                <ul>
+                                    <li><span class="node">Git Hub</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-4 text-center">
+                    <h2 class="section-subtitle" id="lang">Languages</h2>
+                    <div class="tree" id="tree2">
+                        <ul>
+                            <li>
+                                <span class="node"><img src="html5.png" alt="HTML5">HTML5</span>
+                                <ul>
+                                    <li><span class="node"><img src="javascript.png" alt="JavaScript">JavaScript</span></li>
+                                    <li><span class="node"><img src="css3.png" alt="CSS3">CSS3</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    Projects Section
+    <section id="projects" class="container my-5">
+    <h2>Projects</h2>
+    <div class="row" id="projects-container"></div>
+    </section>
+    <hr>
+    <hr>
+     Project Popup Modal
+    <div
+      class="modal fade"
+      id="projectModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="projectModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              src=""
+              alt="Project Image"
+              id="project-image"
+              class="img-fluid"
+            />
+            <p id="project-description"></p>
+            <p>
+              <strong>Technologies:</strong>
+              <span id="project-technologies"></span>
+            </p>
+            <a href="#" id="project-live-link" target="_blank">Live Version</a>
+            <a href="#" id="project-source-link" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section id="certificates" class="container my-5">
+      <h2>Certificates</h2>
+      <div id="certificates-container" class="row"></div>
+    </section>
+    
+    Contact Section 
+    <section id="contact" class="container my-5">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your name"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            maxlength="500"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
