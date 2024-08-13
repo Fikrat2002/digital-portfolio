@@ -21,6 +21,7 @@ body {
   background-image: url(project.imgs/WhatsApp\ Image\ 2024-07-23\ at\ 18.29.34_885dd6cb.jpg);
   background-size: cover;
 }
+
 .navbar {
   padding: 0.1px 0;
 }
@@ -148,7 +149,6 @@ body {
   background-color: #c62828;
   border-color: #c62828;
 }
-
 
 .section-title {
     background-color: rgba(255, 255, 255, 0.2);
